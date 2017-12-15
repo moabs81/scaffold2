@@ -1,7 +1,7 @@
 require('../styles/pageLayout.less');
 import tile from '../styles/imgs/paint2.jpg';
 
-const buildTableComponent = function() {
+const buildTableComponent = function(cbReturn) {
     $(function() {
         $('.contentContainer').append('<div class="appContainer" id="bddAppContainer"></div>');
         document.getElementById('allContentDiv').onscroll = function(e) {
@@ -21,10 +21,8 @@ const buildTableComponent = function() {
             const backgroundImg = document.getElementById('backgroundImg');
             backgroundImg.src = tile;
         }
+        cbReturn('bddAppContainer');
     });
-    if (typeof this === 'function') {
-        this('bddAppContainer');
-    };
 };
 
 export { buildTableComponent };
