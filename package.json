@@ -1,7 +1,7 @@
 {
-    "name": "test-this-scaffold",
+    "name": "!!!!THE FORMAT OF THIS NAME IS WRONG ON PUPROSE BECAUSE YOU DON'T WANT TO INSTALL THIS SCAFFOLD AS IS!!!!",
     "version": "1.0.0",
-    "description": "testing a scaffold. tbdeleted",
+    "description": "Instead, copy the entire root into your new empty project directory, update this package.json to your name, version, and author, and then npm i it.",
     "main": "index.js",
     "scripts": {
         "start": "webpack-dev-server --config ./config/webpack.dev.config.js --hot --inline",
