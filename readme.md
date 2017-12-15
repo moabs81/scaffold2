@@ -23,9 +23,7 @@
 
 See 'package.json' for the NPM scripts used to run the dev environment. 
 
-* To run the dev server, use <code>npm run start</code>
-..* Navigate to http://localhost:4000
-* To run the fake API, use <code>npm run API</code>
-..* Navigate to http://localhost:3000
+* To run the dev server, use <code>npm run start</code> and navigate to http://localhost:4000
+* To run the fake API, use <code>npm run API</code>. The base URL of the API is http://localhost:3000
 * Before building the project, use <code>npm run clean dist</code> to delete the contents of the dist/ directory prior to bundling into it
 * To build this project, use <code>npm run build</code> - I need to fix this config file though, so it may not work right now
