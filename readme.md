@@ -13,10 +13,11 @@
 
 #### How to set up
 
-1. Clone this repo to a separate location in your code directory, eg. "code\scaffold"
+1. Clone this repo to a separate location in your code directory, eg. 'code\scaffold'
 2. Copy the entire root, as-is, into your new project empty project directory
-3. Open 'package.json' and update it with your project title, description, and author.
-4. Now run <code>npm i</code> to install the scaffold.
+3. After the copy, delete the .git file from the new project directory - this is the main reason not to clone this directly, as doing so may mess with your new project repo. Is there a more elegant way to do this? Yes, it's called Yeoman and someday I'll figure that out :) 
+4. Open 'package.json' and update it with your project title, description, and author.
+5. Now run <code>npm i</code> to install the scaffold.
 
 #### How to run
 
