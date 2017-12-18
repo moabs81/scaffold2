@@ -45,12 +45,11 @@ module.exports = {
                     },
                     {
                         test: /\.js$/,
-                        //exclude: /node_modules/,
-                        include: myConfig.buildPath('src/'),
-                        loader: require.resolve('babel-loader'),
-                        options: {
-                            presets: ['env']
-                        }
+                        exclude: /node_modules/,
+                        loader: require.resolve('babel-loader')
+                            /*options: {
+                                presets: ['env']
+                            }*/
                     },
                     {
                         test: /\.less$/,
