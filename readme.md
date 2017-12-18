@@ -8,10 +8,10 @@
 * ESLint with lightly customized rules configuration (see config/ for rule-set)
 * Babel with preset 'env' (based on babel-preset-env)
 * LESS (but switching to Sass soon, because wth why am I using the Lesser one? \#PunIntended)
-* Mocha + Chai (using assert because the.expect.chain.is.just.weird.to.me)
-    * the tests don't actually test anything... yet #TBD
+* Mocha + Chai for the assertion library - but, may slim down and only use mocha + node's built in assert library. We'll see... 
+    * the tests don't actually test anything.. they will as soon as I figure out what it means to unit test client side DOM focused modules.. 
 * jQuery, exposed as project global (i.e. can be used in any module without being required or imported) using Webpack's ProvidePlugin plugin, because I'm stuck in 2013.
-* JSON-Server to mock simple APIs (I love this thing, seriously. Also, I'm so easy to impress, seriously.)
+* JSON-Server to mock simple APIs (I love this thing, seriously. Also, I'm so easy to impress, seriously. Also, I haven't configured this at all other than to include it in the project and in the scripts list. But after struggling with CORS issues in a local environment for what seemed like decades but was probably hours, this thing is heavenly.)
     * a db.json source file contains a few pieces of data, designed to mock company locations and users
 * A few modules, mostly placeholders
     * The component 'workbench container' includes the top menu, the transition code for scrolling and parallax, and returns the name of the target 'root' div for you to start building your application. The stylesheet for it is a bit of a mess, and like cleaning up a junk drawer, it is on my to-do list to clean it up. 
@@ -44,7 +44,7 @@ This toolset uses npm scripts and a chain of Webpack plug-ins and loaders rather
 
 #### My ambitions
 
-* I am still learning how to organize actual code, so right now this scaffold doesn't include any directories for code past the src/components level. In fact, to call it a scaffold is probably pretty generous... At some point I might create more structure there
-* My lint --> test --> build task flow could be cleaner, probably
-* Because there are global dependencies, I eventually intend to set this environment up in containers so as to reduce the required host dependencies to only Docker, just as a can-I-do-this exercise
-* I also intend to use a scaffolding tool like Yeoman to do this entire process more gracefully at some point
+[] I am still learning how to organize actual code, so right now this scaffold doesn't include any directories for code past the src/components level. In fact, to call it a scaffold is probably pretty generous... At some point I might create more structure there
+[] My lint --> test --> build task flow could be cleaner or more automated, probably
+[] Because there are global dependencies, I eventually intend to set this environment up in containers so as to reduce the required host dependencies to only Docker, just as a can-I-do-this exercise
+[] I also intend to use a scaffolding tool like Yeoman to do this entire process more gracefully at some point
