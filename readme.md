@@ -47,5 +47,6 @@ This toolset uses npm scripts and a chain of Webpack plug-ins and loaders rather
 
 - [ ] I am still learning how to organize actual code, so right now this scaffold doesn't include any directories for code past the src/components level. In fact, to call it a scaffold is probably pretty generous... At some point I might create more structure there
 - [ ] My lint --> test --> build task flow could be cleaner or more automated, probably
+- [ ] I really only have a hazy view of what I want to do with this, but I want to write a test suite to validate this template upon install. probably validate some env vars, path builds, do a few dependency checks, etc... 
 - [ ] Because there are global dependencies, I eventually intend to set this environment up in containers so as to reduce the required host dependencies to only Docker, just as a can-I-do-this exercise
 - [ ] I also intend to use a scaffolding tool like Yeoman to do this entire process more gracefully at some point
