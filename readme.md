@@ -10,11 +10,11 @@
 * LESS (but switching to Sass soon, because wth why am I using the Lesser one? \#PunIntended)
 * Mocha + Chai (using assert because the.expect.chain.is.just.weird.to.me)
     * the tests don't actually test anything... yet #TBD
-* jQuery, exposed as project global (i.e. can be used in any module without being required or imported) using webpack's ProvidePlugin plugin, because I'm stuck in 2013.
-* JSON-Server to mock simple APIs (I love this thing, seriously)
+* jQuery, exposed as project global (i.e. can be used in any module without being required or imported) using Webpack's ProvidePlugin plugin, because I'm stuck in 2013.
+* JSON-Server to mock simple APIs (I love this thing, seriously. Also, I'm so easy to impress, seriously.)
     * a db.json source file contains a few pieces of data, designed to mock company locations and users
 * A few modules, mostly placeholders
-    * The component 'workbench container' includes the top menu, the transition code for scrolling and parallax, and returns the name of the target 'root' div for you to start building your application
+    * The component 'workbench container' includes the top menu, the transition code for scrolling and parallax, and returns the name of the target 'root' div for you to start building your application. The stylesheet for it is a bit of a mess, and like cleaning up a junk drawer, it is on my to-do list to clean it up. 
 
 #### Global dependencies include
 
@@ -34,13 +34,13 @@
 
 #### How to run
 
-This scaffold uses npm scripts and a chain of webpack plug-ins and loaders rather than a task runner like gulp or grunt. See 'package.json' for the NPM scripts used to run the dev environment
+This toolset uses npm scripts and a chain of Webpack plug-ins and loaders rather than a task runner like gulp or grunt. See 'package.json' for the NPM scripts used to run the dev environment
 
 * To run the dev server, use <code>npm run start</code> and navigate to http://localhost:4000
 * To run the fake API, use <code>npm run API</code>. The base URL of the API is http://localhost:3000
-* To run the test suite, use <code>npm run test</code>. Obviously, make sure you have, like, tests first
+* To run the test suite, use <code>npm run test</code>. Obviously, make sure you have, like, tests first    
 * Before building the project, use <code>npm run clean dist</code> to delete the contents of the dist/ directory prior to bundling into it
-* To build this project, use <code>npm run build</code> - I need to fix this config file though, so it may not work right now
+* To build this project, use <code>npm run build</code> - I need to fix this config though, so it may not work right now
 
 #### My ambitions
 

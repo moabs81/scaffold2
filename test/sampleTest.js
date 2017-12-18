@@ -1,3 +1,5 @@
+//This is just a "sample test" pulled directly from the Chai website. So... it's not actually testing anything :) But you will still feel good when you see those green check marks... 
+
 'use strict';
 
 const chai = require('chai');
