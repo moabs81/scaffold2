@@ -1,6 +1,7 @@
 ## How to use this scaffold
 
 ### Important: Do not clone this repo directly into your new project
+#### Also, don't forget to replace this readme.md with a readme for your actual project
 
 #### This node.js based project scaffold and dev toolchain is very much a WIP and to be honest is mostly for me, but feel free to use it! But yours is probably better... It consists of:
 
