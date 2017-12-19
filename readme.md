@@ -42,6 +42,7 @@ This toolset uses npm scripts and a chain of Webpack plug-ins and loaders rather
 * To run the test suite, use <code>npm run test</code>. Obviously, make sure you have, like, tests first    
 * Before building the project, use <code>npm run clean dist</code> to delete the contents of the dist/ directory prior to bundling into it
 * To build this project, use <code>npm run build</code> - I need to fix this config though, so it may not work right now
+* If you have built this project, run <code>npm run serve</code> and navigate to http://localhost:5000 to use JSON-Server to serve the build locally
 
 #### My ambitions
 
