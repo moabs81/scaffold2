@@ -1,8 +1,6 @@
 //@floatDivColor : rgba(0, 0, 0, 0.6);
 @menuColor: #009DB4;
-@menuColor1: #663818;
 @menuTextColor: #E3C286;
-//@floatDivColor : rgba(255, 255, 255, 0.45);
 @floatDivColor : rgba(0, 0, 0, 0.45);
 @bodyFont: "Lucida Sans Unicode",
 "Lucidia Grande",
@@ -13,7 +11,7 @@ sans-serif;
 }
 
 #IE11FallbackBackground() {
-    background-image: url('./imgs/paint2.jpg');
+    background-image: url('./imgs/chalkboard.jpeg');
     background-attachment: fixed;
     background-position: right top;
 }
@@ -54,9 +52,9 @@ sans-serif;
     -ms-transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
-    -ms-transform: translateZ(-9px) scale(17);
-    -webkit-transform: translateZ(-9px) scale(17);
-    transform: translateZ(-9px) scale(17);
+    -ms-transform: translateZ(-9px) scale(14);
+    -webkit-transform: translateZ(-9px) scale(14);
+    transform: translateZ(-9px) scale(14);
     img {
         display: block;
         width: 100%; //height: auto !important;        
@@ -87,6 +85,7 @@ body {
                 h2 {
                     #menuTransition;
                     color: @menuColor1;
+                    letter-spacing: 0.15vw;
                     margin-top: 50px;
                     padding: 5px;
                 }
@@ -101,6 +100,7 @@ body {
             .left-title {
                 h2 {
                     color: @menuTextColor;
+                    letter-spacing: 0.0vw;
                     margin-top: 25px;
                     padding: 0px;
                 }
