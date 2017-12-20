@@ -17,13 +17,21 @@
 * A few modules, mostly placeholders
     * The component 'workbench container' includes the top menu, the transition code for scrolling and parallax, and returns the name of the target 'root' div for you to start building your application. The stylesheet for it is a bit of a mess, and like cleaning up a junk drawer, it is on my to-do list to clean it up. 
 
-#### Global dependencies include
+#### Global dependencies
+Node and NPM can be installed by [installing Node and NPM](https://nodejs.org/en/ "Node.js Homepage).
+
+All global package dependencies can be installed using <code>npm install -g</code>. I have no idea if the versions are really that important to this scaffold, so ya know... 
 
 * node.js (6.11.0)
+    * needed to run everything
 * npm (5.6.0)
+    * also needed for everything in this non-browser world
 * webpack (3.6.0)
+    * needed to run npm run build
 * webpack-dev-server (2.9.1)
+    * needed to run npm run start
 * mocha (4.0.1)
+    * needed to run npm run test
 
 #### How to set up
 
@@ -35,7 +43,7 @@
 
 #### How to run
 
-This toolset uses npm scripts and a chain of Webpack plug-ins and loaders rather than a task runner like gulp or grunt. See 'package.json' for the NPM scripts used to run the dev environment
+This toolset uses npm scripts and a chain of Webpack plug-ins and loaders rather than a task runner like gulp or grunt. See 'package.json' for the NPM scripts used to run the dev environment. As a first troubleshooting stpe, see the above list of globals if you have problems running the scripts. 
 
 * To run the dev server, use <code>npm run start</code> and navigate to http://localhost:4000
 * To run the fake API, use <code>npm run API</code>. The base URL of the API is http://localhost:3000
