@@ -27,23 +27,23 @@ All global package dependencies can be installed using <code>npm install -g</cod
 * npm (5.6.0)
     * also needed for everything in this non-browser world
 * webpack (3.6.0)
-    * needed to run npm run build
+    * needed to run <code>npm run build</code>
 * webpack-dev-server (2.9.1)
-    * needed to run npm run start
+    * needed to run <code>npm run start</code>
 * mocha (4.0.1)
-    * needed to run npm run test
+    * needed to run <code>npm run test</code>
 
 #### How to set up
 
 1. Clone this repo to a separate location in your code directory, eg. 'code\scaffold'
 2. Copy the entire root, as-is, into your new project empty project directory
 3. After the copy, delete the .git file from the new project directory - this is the main reason not to clone this directly, as doing so may mess with your new project repo
-4. Open 'package.json' and update it with your project title, description, and author
-5. Now run <code>npm i</code> or <code>yarn install</code> to install the scaffold.  Is there a more elegant way to do this? Yes, it's called Yeoman and someday I'll figure that out :) 
+4. Open 'package.json' and update it with your project title, version, description, and author
+5. Now run <code>npm i</code> or <code>yarn install</code> to install the scaffold.  Is there a more elegant way to do this? Yes, it's called [Yeoman](http://yeoman.io/learning/) and someday I'll figure that out :) 
 
 #### How to run
 
-This toolset uses npm scripts and a chain of Webpack plug-ins and loaders rather than a task runner like gulp or grunt. See 'package.json' for the NPM scripts used to run the dev environment. As a first troubleshooting stpe, see the above list of globals if you have problems running the scripts. 
+This toolset uses npm scripts and a chain of Webpack plug-ins and loaders rather than a task runner like gulp or grunt. See 'package.json' for the NPM scripts used to run the dev environment. As a first troubleshooting step, see the above list of globals if you have problems running the scripts. 
 
 * To run the dev server, use <code>npm run start</code> and navigate to http://localhost:4000
 * To run the fake API, use <code>npm run API</code>. The base URL of the API is http://localhost:3000
@@ -54,8 +54,8 @@ This toolset uses npm scripts and a chain of Webpack plug-ins and loaders rather
 
 #### My ambitions
 
-- [ ] I am still learning how to organize actual code, so right now this scaffold doesn't include any directories for code past the src/components level. In fact, to call it a scaffold is probably pretty generous... At some point I might create more structure there
+- [ ] I am still learning how to organize actual code, so right now this scaffold doesn't include any directories for code past the src/components level. In fact, to call it a scaffold at all is probably pretty generous/incorrect, it's really little more than a directory structure and an install file... At some point I might create more structure
 - [ ] My lint --> test --> build task flow could be cleaner or more automated, probably
 - [ ] I really only have a hazy view of what I want to do with this, but I want to write a test suite to validate this template upon install. probably validate some env vars, path builds, do a few dependency checks, etc... 
-- [ ] Because there are global dependencies, I eventually intend to set this environment up in containers so as to reduce the required host dependencies to only Docker, just as a can-I-do-this exercise
-- [ ] I also intend to use a scaffolding tool like Yeoman to do this entire process more gracefully at some point
+- [ ] Because there are global dependencies, I eventually intend to set this environment up in [containers](https://www.docker.com/) so as to reduce the required host dependencies to only Docker, just as a can-I-do-this exercise
+- [ ] I also intend to use a scaffolding tool like [Yeoman](http://yeoman.io/learning/) to do this entire process more gracefully at some point
