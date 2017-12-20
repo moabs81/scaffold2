@@ -18,7 +18,7 @@
     * The component 'workbench container' includes the top menu, the transition code for scrolling and parallax, and returns the name of the target 'root' div for you to start building your application. The stylesheet for it is a bit of a mess, and like cleaning up a junk drawer, it is on my to-do list to clean it up. 
 
 #### Global dependencies
-Node and NPM can be installed by [installing Node and NPM] (https://nodejs.org/en/).
+Node and NPM can be installed by installing [Node and NPM] (https://nodejs.org/en/).
 
 All global package dependencies can be installed using <code>npm install -g</code>. I have no idea if the versions are really that important to this scaffold, so ya know... 
 
