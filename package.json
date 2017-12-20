@@ -1,6 +1,6 @@
 {
     "name": "!!!!THE FORMAT OF THIS NAME IS WRONG ON PUPROSE BECAUSE YOU DON'T WANT TO INSTALL THIS SCAFFOLD AS IS!!!!",
-    "version": "1.0.0",
+    "version": "0.1.2",
     "description": "Instead, copy the entire root into your new empty project directory, update this package.json to your name, version, and author, and then npm i or yarn install it. See readme.md for more insight.",
     "scripts": {
         "start": "webpack-dev-server --config ./config/webpack.dev.config.js --hot --inline",
