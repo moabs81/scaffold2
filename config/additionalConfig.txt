@@ -1,0 +1,28 @@
+REACT STUFF
+//PACKAGE.JSON ADDITIONS
+"devDependencies" :{
+    "babel-preset-react": "^6.24.1",
+    "eslint-plugin-flowtype": "2.39.1",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-react": "^7.5.1",
+}
+"dependencies":{
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+}
+
+// .babelrc
+
+{
+    "presets": ["env", "react"]
+}
+
+// .eslintrc
+"parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
+    }
+},
+"plugins": ["react"]
