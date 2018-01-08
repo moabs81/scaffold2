@@ -11,7 +11,7 @@
 * LESS (but switching to Sass soon, because wth why am I using the Lesser one? \#PunIntended)
 * Mocha + Chai for the assertion library - but, may slim down and only use mocha + node's built in assert library. We'll see... 
     * the tests don't actually test anything.. they will as soon as I figure out what it means to unit test client side DOM focused modules.. 
-* jQuery, exposed as project global (i.e. can be used in any module without being required or imported) using Webpack's ProvidePlugin plugin, because I'm stuck in 2013.
+* jQuery, exposed as project global (i.e. can be used in any module without being required or imported) using Webpack's ProvidePlugin plugin, because I'm stuck in 2013. This will be probably be removed as soon as I optimize jQuery out of the 'workBenchContainer' component, so be warned...
 * JSON-Server to mock simple APIs (I love this thing, seriously. Also, I'm so easy to impress, seriously. Also, I haven't configured this at all other than to include it in the project and in the scripts list. But after struggling with CORS issues in a local environment for what seemed like decades but was probably hours, this thing is heavenly.)
     * a db.json source file contains a few pieces of data, designed to mock company locations and users
 * A few modules, mostly placeholders
@@ -38,7 +38,7 @@ All global package dependencies can be installed using <code>npm install -g</cod
 1. Clone this repo to a separate location in your code directory, eg. 'code\scaffold'
 2. Copy the entire root, as-is, into your new project empty project directory
 3. After the copy, delete the .git file from the new project directory - this is the main reason not to clone this directly, as doing so may mess with your new project repo
-4. Open 'package.json' and update it with your project title, version, description, and author. NOTE: IF YOU WOULD LIKE TO USE REACT WITH THIS SCAFFOLD, SEE THE BELOW SECTION TITLED 'NOTES ABOUT REACT'
+4. Open 'package.json' and update it with your project title, version, description, and author. NOTE: IF YOU WOULD LIKE TO USE REACT WITH THIS SCAFFOLD, SEE THE BELOW SECTION TITLED 'NOTES ABOUT REACT' AND BE WARNED - IT'S A MESS...
 5. Now run <code>npm i</code> or <code>yarn install</code> to install the scaffold.  Is there a more elegant way to do this? Yes, it's called [Yeoman](http://yeoman.io/learning/) and someday I'll figure that out :) 
 
 #### How to run
@@ -70,7 +70,8 @@ Buried innocuously within the config directory of this scaffold is a file called
 #### My ambitions
 
 - [ ] I am still learning how to organize actual code, so right now this scaffold doesn't include any directories for code past the src/components level. In fact, to call it a scaffold at all is probably pretty generous/incorrect, it's really little more than a directory structure and an install file... At some point I might create more structure.
-- [ ] My lint --> test --> build task flow could be cleaner or more automated, probably.
+- [ ] I need to incorporate node environment variables.
+- [ ] Speaking of that, my lint --> test --> build task flow could be cleaner or more automated, probably.
 - [ ] I really only have a hazy view of what I want to do with this, but I want to write a test suite to validate this template upon install. probably validate some env vars, path builds, do a few dependency checks, etc... 
 - [ ] Because there are global dependencies, I eventually intend to set this environment up in [containers](https://www.docker.com/) so as to reduce the required host dependencies to only Docker, just as a can-I-do-this exercise.
 - [ ] I also intend to use a scaffolding tool like [Yeoman](http://yeoman.io/learning/) to do this entire process more gracefully at some point. In addition to that being a more efficient process overall, the 'React' manual additions make it the process painful. More to come... 
