@@ -38,7 +38,7 @@ All global package dependencies can be installed using <code>npm install -g</cod
 1. Clone this repo to a separate location in your code directory, eg. 'code\scaffold'
 2. Copy the entire root, as-is, into your new project empty project directory
 3. After the copy, delete the .git file from the new project directory - this is the main reason not to clone this directly, as doing so may mess with your new project repo
-4. Open 'package.json' and update it with your project title, version, description, and author
+4. Open 'package.json' and update it with your project title, version, description, and author. NOTE: IF YOU WOULD LIKE TO USE REACT WITH THIS SCAFFOLD, SEE THE BELOW SECTION TITLED 'NOTES ABOUT REACT'
 5. Now run <code>npm i</code> or <code>yarn install</code> to install the scaffold.  Is there a more elegant way to do this? Yes, it's called [Yeoman](http://yeoman.io/learning/) and someday I'll figure that out :) 
 
 #### How to run
