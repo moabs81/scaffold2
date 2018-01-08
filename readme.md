@@ -38,7 +38,7 @@ All global package dependencies can be installed using <code>npm install -g</cod
 1. Clone this repo to a separate location in your code directory, eg. 'code\scaffold'
 2. Copy the entire root, as-is, into your new project empty project directory
 3. After the copy, delete the .git file from the new project directory - this is the main reason not to clone this directly, as doing so may mess with your new project repo
-4. Open 'package.json' and update it with your project title, version, description, and author. NOTE: IF YOU WOULD LIKE TO USE REACT WITH THIS SCAFFOLD, SEE THE BELOW SECTION TITLED 'NOTES ABOUT REACT' AND BE WARNED - IT'S A MESS...
+4. Open [package.json](https://github.com/moabs81/scaffold2/blob/master/package.json) and update it with your project title, version, description, and author. NOTE: IF YOU WOULD LIKE TO USE REACT WITH THIS SCAFFOLD, SEE THE BELOW SECTION TITLED 'NOTES ABOUT REACT' AND BE WARNED - IT'S A MESS...
 5. Now run <code>npm i</code> or <code>yarn install</code> to install the scaffold.  Is there a more elegant way to do this? Yes, it's called [Yeoman](http://yeoman.io/learning/) and someday I'll figure that out :) 
 
 #### How to run
@@ -54,17 +54,17 @@ This toolset uses npm scripts and a chain of Webpack plug-ins and loaders rather
 
 #### Notes about React
 
-Buried innocuously within the config directory of this scaffold is a file called additionalConfig.txt. It is my <i>really hacky</i> way of modifying this project to be a [React](https://github.com/facebook/react) based project because by the time I discovered the excellent [create-react-app](https://github.com/facebookincubator/create-react-app) I'd already invested so much time into this little project that I wanted to incorporate React into my toolchain and build rather than ditch it all for that one. I am willing to tolerate this mess for myself for the time being, so for now and until I either separate the two dev scaffolds or create a more elegant way of doing it for myself, follow these steps to include React in the project. NOTE: ALL OF THESE STEPS WILL BE COMPLETED BEFORE THE SET UP STEP FIVE NOTED ABOVE. 
+Buried innocuously within the config directory of this scaffold is a file called [additionalConfig.txt](https://github.com/moabs81/scaffold2/blob/master/config/additionalConfig.txt). It is my <i>really hacky</i> way of modifying this project to be a [React](https://github.com/facebook/react) based project because by the time I discovered the excellent [create-react-app](https://github.com/facebookincubator/create-react-app) I'd already invested so much time into this little project that I wanted to incorporate React into my toolchain and build rather than ditch it all for that one. I am willing to tolerate this mess for myself for the time being, so for now and until I either separate the two dev scaffolds or create a more elegant way of doing it for myself, follow these steps to include React in the project. NOTE: ALL OF THESE STEPS WILL BE COMPLETED BEFORE THE SET UP STEP FIVE NOTED ABOVE. 
 
-1. In your new project's package.json, add the additionally listed dependencies (note there is a dev set and a prod set). These include React 16 along with React-dom and prop-types, Babel's React preset, eslint plugins to handle React and JSX, and packages for testing React components using [Enzyme](https://github.com/airbnb/enzyme) with [Chai](https://github.com/producthunt/chai-enzyme).
+1. In your new project's [package.json](https://github.com/moabs81/scaffold2/blob/master/package.json), add the additionally listed dependencies (note there is a dev set and a prod set). These include React 16 along with React-dom and prop-types, Babel's React preset, eslint plugins to handle React and JSX, and packages for testing React components using [Enzyme](https://github.com/airbnb/enzyme) with [Chai](https://github.com/producthunt/chai-enzyme).
 
-2. Add 'react' to your .babelrc as shown in that snippet. 
+2. Add 'react' to your [.babelrc](https://github.com/moabs81/scaffold2/blob/master/.babelrc) as shown in that snippet. 
 
-3. Add the parserOptions and 'react' plugin to your .eslintrc as shown in that snippet.
+3. Add the parserOptions and 'react' plugin to your [.eslintrc](https://github.com/moabs81/scaffold2/blob/master/config/.eslintrc) as shown in that snippet.
 
 4. As noted above, dependencies for component testing with Enzyme using the existing Mocha + Chai test engine/assertion library have been included. If you wish to create component tests, then do the following:
     * In your new project's package.json, replace the script 'test' with the one noted in that snippet. This is done to add the custom no-css compiler to Mocha. If this is not done, Mocha (Using Chai + Enzyme, see below) will throw syntax errors for any .less stylesheets imported into React components under test. 
-    * In your project's config directory, create a new .js file called mochaNoLess.js which contains the contents of that snippet. This simple function will essentially cause Mocha to ignore any imported .less files, thus avoiding any of the otherwise anticipated syntax errors. This is not a robust configuration, but can be made more so with the addition of more extensions (.css, .scss, etc) if required. 
+    * In your project's [config directory](https://github.com/moabs81/scaffold2/tree/master/config), create a new .js file called mochaNoLess.js which contains the contents of that snippet. This simple function will essentially cause Mocha to ignore any imported .less files, thus avoiding any of the otherwise anticipated syntax errors. This is not a robust configuration, but can be made more so with the addition of more extensions (.css, .scss, etc) if required. 
     * Use the test imports snippets as a guide to boilerplate React component testing. See [Enzyme's readme](https://github.com/airbnb/enzyme) for additional insights into testing with Enzyme. 
 
 #### My ambitions
