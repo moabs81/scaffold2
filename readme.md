@@ -73,5 +73,6 @@ Buried innocuously within the config directory of this scaffold is a file called
 - [ ] I need to incorporate node environment variables.
 - [ ] Speaking of that, my lint --> test --> build task flow could be cleaner or more automated, probably.
 - [ ] I really only have a hazy view of what I want to do with this, but I want to write a test suite to validate this template upon install. probably validate some env vars, path builds, do a few dependency checks, etc... 
+- [ ] For us [VSCode](https://code.visualstudio.com/) fans, I need to create a VSCode config file to default .js files to language mode - React. Otherwise, if you forget to do this manually, the first time you hit save on a new React project, you will cry. 
 - [ ] Because there are global dependencies, I eventually intend to set this environment up in [containers](https://www.docker.com/) so as to reduce the required host dependencies to only Docker, just as a can-I-do-this exercise.
 - [ ] I also intend to use a scaffolding tool like [Yeoman](http://yeoman.io/learning/) to do this entire process more gracefully at some point. In addition to that being a more efficient process overall, the 'React' manual additions make it the process painful. More to come... 
