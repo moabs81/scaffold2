@@ -1,15 +1,15 @@
 {
     "offices": [
-        { "id": "088", "city": "Ahoskie", "primaryPhone": "252-555-1111" },
-        { "id": "209", "city": "Archdale", "primaryPhone": "336-555-2222" },
-        { "id": "165", "city": "Barco", "primaryPhone": "252-555-3333" },
-        { "id": "011", "city": "Butner", "primaryPhone": "919-555-4444" },
-        { "id": "174", "city": "Chapel Hill", "primaryPhone": "919-555-5555" },
-        { "id": "119", "city": "Clemmons", "primaryPhone": "336-555-8888" },
-        { "id": "231", "city": "Granite Falls", "primaryPhone": "828-555-9999" },
-        { "id": "212", "city": "King", "primaryPhone": "336-555-6666" },
-        { "id": "039", "city": "Lexington", "primaryPhone": "704-732-0764" },
-        { "id": "245", "city": "Swan Quarter", "primaryPhone": "252-555-7777" }
+        { "id": "088", "region": "Orange", "city": "Ahoskie", "primaryPhone": "252-555-1111" },
+        { "id": "209", "region": "Black", "city": "Archdale", "primaryPhone": "336-555-2222" },
+        { "id": "165", "region": "Orange", "city": "Barco", "primaryPhone": "252-555-3333" },
+        { "id": "011", "region": "Green", "city": "Butner", "primaryPhone": "919-555-4444" },
+        { "id": "174", "region": "Green", "city": "Chapel Hill", "primaryPhone": "919-555-5555" },
+        { "id": "119", "region": "Red", "city": "Clemmons", "primaryPhone": "336-555-8888" },
+        { "id": "231", "region": "Black", "city": "Granite Falls", "primaryPhone": "828-555-9999" },
+        { "id": "212", "region": "Red", "city": "King", "primaryPhone": "336-555-6666" },
+        { "id": "039", "region": "Red", "city": "Lexington", "primaryPhone": "704-732-0764" },
+        { "id": "245", "region": "Red", "city": "Swan Quarter", "primaryPhone": "252-555-7777" }
     ],
     "users": [
         { "id": "P12345F", "name": "Pat Verbeek", "workPhone": "919-123-4567" },

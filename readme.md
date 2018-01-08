@@ -52,10 +52,25 @@ This toolset uses npm scripts and a chain of Webpack plug-ins and loaders rather
 * To build this project, use <code>npm run build</code> - I need to fix this config though, so it may not work right now
 * If you have built this project, run <code>npm run serve</code> and navigate to http://localhost:5000 to use JSON-Server to serve the build locally
 
+#### Notes about React
+
+Buried innocuously within the config directory of this scaffold is a file called additionalConfig.txt. It is my <i>really hacky</i> way of modifying this project to be a React based project because by the time I discovered the excellent [create-react-app](https://github.com/facebookincubator/create-react-app) I'd already invested so much time into this little project that I wanted to incorporate React into my toolchain and build rather than ditch it all for that one. I am willing to tolerate this mess for myself for the time being, so for now and until I either separate the two dev scaffolds or create a more elegant way of doing it for myself, follow these steps to include React in the project. NOTE: ALL OF THESE STEPS WILL BE COMPLETED BEFORE THE SET UP STEP FIVE NOTED ABOVE. 
+
+1. In your new project's package.json, add the additionally listed dependencies (note there is a dev set and a prod set). These include React 16 along with React-dom and prop-types, Babel's React preset, eslint plugins to handle React and JSX, and packages for testing React components using [Enzyme](https://github.com/airbnb/enzyme) with [Chai](https://github.com/producthunt/chai-enzyme).
+
+2. Add 'react' to your .babelrc as shown in that snippet. 
+
+3. Add the parserOptions and 'react' plugin to your .eslintrc as shown in that snippet.
+
+4. As noted above, dependencies for component testing with Enzyme using the existing Mocha + Chai test engine/assertion library have been included. If you wish to create component tests, then do the following:
+    * In your new project's package.json, replace the script 'test' with the one noted in that snippet. This is done to add the custom no-css compiler to Mocha. If this is not done, Mocha (Using Chai + Enzyme, see below) will throw syntax errors for any .less stylesheets imported into React components under test. 
+    * In your project's config directory, create a new .js file called mochaNoLess.js which contains the contents of that snippet. This simple function will essentially cause Mocha to ignore any imported .less files, thus avoiding any of the otherwise anticipated syntax errors. This is not a robust configuration, but can be made more so with the addition of more extensions (.css, .scss, etc) if required. 
+    * Use the test imports snippets as a guide to boilerplate React component testing. See [Enzyme's readme](https://github.com/airbnb/enzyme) for additional insights into testing with Enzyme. 
+
 #### My ambitions
 
-- [ ] I am still learning how to organize actual code, so right now this scaffold doesn't include any directories for code past the src/components level. In fact, to call it a scaffold at all is probably pretty generous/incorrect, it's really little more than a directory structure and an install file... At some point I might create more structure
-- [ ] My lint --> test --> build task flow could be cleaner or more automated, probably
+- [ ] I am still learning how to organize actual code, so right now this scaffold doesn't include any directories for code past the src/components level. In fact, to call it a scaffold at all is probably pretty generous/incorrect, it's really little more than a directory structure and an install file... At some point I might create more structure.
+- [ ] My lint --> test --> build task flow could be cleaner or more automated, probably.
 - [ ] I really only have a hazy view of what I want to do with this, but I want to write a test suite to validate this template upon install. probably validate some env vars, path builds, do a few dependency checks, etc... 
-- [ ] Because there are global dependencies, I eventually intend to set this environment up in [containers](https://www.docker.com/) so as to reduce the required host dependencies to only Docker, just as a can-I-do-this exercise
-- [ ] I also intend to use a scaffolding tool like [Yeoman](http://yeoman.io/learning/) to do this entire process more gracefully at some point
+- [ ] Because there are global dependencies, I eventually intend to set this environment up in [containers](https://www.docker.com/) so as to reduce the required host dependencies to only Docker, just as a can-I-do-this exercise.
+- [ ] I also intend to use a scaffolding tool like [Yeoman](http://yeoman.io/learning/) to do this entire process more gracefully at some point. In addition to that being a more efficient process overall, the 'React' manual additions make it the process painful. More to come... 
