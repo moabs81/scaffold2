@@ -3,9 +3,9 @@
     "version": "0.1.2",
     "description": "Instead, copy the entire root into your new empty project directory, update this package.json to your name, version, and author, and then npm i or yarn install it. See readme.md for more insight.",
     "scripts": {
-        "start": "webpack-dev-server --config ./config/webpack.dev.config.js --hot --inline",
+        "dev": "webpack-dev-server --config ./config/webpack.dev.config.js --hot --inline",
         "API": "json-server --watch ./fakeRestApi/db.json",
-        "test": "mocha --compilers js:babel-core/register",
+        "start": "start npm run dev && start npm run API && start http://localhost:4000",
         "cleanDist": "rm -rf dist/*",
         "build": "webpack --config ./config/webpack.prod.config.js",
         "serve": "json-server --watch ./fakeRestApi/db.json --static ./dist --port 5000"
