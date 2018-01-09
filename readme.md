@@ -71,7 +71,7 @@ Buried innocuously within the config directory of this scaffold is a snippets fi
 #### My ambitions
 
 - [ ] I am still learning how to organize actual code, so right now this scaffold doesn't include any directories for code past the src/components level. In fact, to call it a scaffold at all is probably pretty generous/incorrect, it's really little more than a directory structure and an install file... At some point I might create more structure.
-- [ ] I need to incorporate node environment variables.
+- [ ] I need to incorporate node environment variables and create a production bundler with URL updates, etc.
 - [ ] Speaking of that, my lint --> test --> build task flow could be cleaner or more automated, probably.
 - [ ] I really only have a hazy view of what I want to do with this, but I want to write a test suite to validate this template upon install. probably validate some env vars, path builds, do a few dependency checks, etc... 
 - [ ] For us [VSCode](https://code.visualstudio.com/) fans, I need to create a VSCode config file to default .js files to language mode - React. Otherwise, if you forget to do this manually, the first time you hit save on a new React project, you will cry. 
