@@ -15,7 +15,7 @@
 * JSON-Server to mock simple APIs (I love this thing, seriously. Also, I'm so easy to impress, seriously. Also, I haven't configured this at all other than to include it in the project and in the scripts list. But after struggling with CORS issues in a local environment for what seemed like decades but was probably hours, this thing is heavenly.)
     * a db.json source file contains a few pieces of data, designed to mock company locations and users
 * A few modules, mostly placeholders
-    * The component 'workbench container' includes the top menu, the transition code for scrolling and parallax, and returns the name of the target 'root' div for you to start building your application. The stylesheet for it is a bit of a mess, and like cleaning up a junk drawer, it is on my to-do list to clean it up. 
+    * The component 'workbench container' includes the top menu, the transition code for scrolling and parallax, and returns the name of the target 'root' div for you to start building your application. The stylesheet for it is a bit of a mess, and like cleaning up a junk drawer, it is on my to-do list to clean it up
 
 #### Global dependencies
 Node and NPM can be installed by installing [Node and NPM](https://nodejs.org/en/).
